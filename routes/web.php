@@ -52,6 +52,8 @@ Route::get('/categories', function () {
 Route::get('/login', [LoginController::class, 'index']);
 
 Route::get('/register', [RegisterController::class, 'index']);
+// Jika ada request ke halaman register tapi methodnya post maka panggil kontroller yang methodnya store
+Route::post('/register', [RegisterController::class, 'store']);
 
 // SUDAH DITANGANI OLEH QUERY DI MODEL
 // Route::get('/categories/{category:slug}', function (Category $category) {
