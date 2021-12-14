@@ -18,3 +18,17 @@
     border-radius: 0;
     margin-bottom: -1px;
 }
+
+.banner h3 {
+    margin-top: 280px;
+}
+
+.card {
+    max-width: 640px;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        max-width: 540px;
+    }
+}
